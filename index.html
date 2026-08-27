@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUNA Café — уютное кафе в центре города</title>
+<meta name="description" content="LUNA Café — премиальное кафе с авторским кофе, завтраками и десертами. Атмосфера тепла и тишины в самом центре города.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="brand">
+      <svg class="brand-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 13.5C18.6 15.8 16 17.4 13 17.4C8.3 17.4 4.5 13.6 4.5 8.9C4.5 6 6 3.4 8.3 2C4.2 3 1 6.7 1 11.2C1 16.6 5.4 21 10.8 21C15.2 21 18.9 18.1 20 13.5Z" fill="currentColor"/>
+      </svg>
+      <span>LUNA <em>Café</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#about" class="nav-link">О нас</a>
+      <a href="#menu" class="nav-link">Меню</a>
+      <a href="#dishes" class="nav-link">Блюда</a>
+      <a href="#gallery" class="nav-link">Галерея</a>
+      <a href="#testimonials" class="nav-link">Отзывы</a>
+      <a href="#contact" class="nav-link">Контакты</a>
+      <a href="#booking" class="nav-link nav-cta">Забронировать</a>
+    </nav>
+
+    <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1920&q=80"
+         alt="Уютный интерьер кафе LUNA с теплым светом" id="heroImg">
+    <div class="hero-scrim"></div>
+  </div>
+
+  <svg class="hero-crescent" width="140" height="140" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M20 13.5C18.6 15.8 16 17.4 13 17.4C8.3 17.4 4.5 13.6 4.5 8.9C4.5 6 6 3.4 8.3 2C4.2 3 1 6.7 1 11.2C1 16.6 5.4 21 10.8 21C15.2 21 18.9 18.1 20 13.5Z" fill="currentColor"/>
+  </svg>
+
+  <div class="hero-content">
+    <p class="eyebrow reveal" data-reveal>Кофейня &amp; кухня — открыто ежедневно</p>
+    <h1 class="hero-title reveal" data-reveal>LUNA <span>Café</span></h1>
+    <p class="hero-tagline reveal" data-reveal>A little place to enjoy the moment</p>
+    <div class="hero-actions reveal" data-reveal>
+      <a href="#menu" class="btn btn-primary">Посмотреть меню</a>
+      <a href="#booking" class="btn btn-outline" data-scroll-target="#booking">Забронировать столик</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Пролистать вниз">
+    <span></span>
+  </a>
+</section>
+
+<main>
+
+<!-- ===== ABOUT ===== -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal" data-reveal>
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80"
+           alt="Бариста LUNA Café готовит кофе за стойкой">
+      <div class="about-media-frame" aria-hidden="true"></div>
+    </div>
+
+    <div class="about-copy">
+      <p class="eyebrow reveal" data-reveal>О нас</p>
+      <h2 class="section-title reveal" data-reveal>Место, названное в честь тихой луны</h2>
+      <p class="reveal" data-reveal>
+        LUNA Café появилось в 2018 году из простой идеи — создать пространство, где утро
+        начинается медленно, а вечер не спешит заканчиваться. Название пришло от привычки
+        основательницы кафе пить последнюю чашку чая под открытым небом, наблюдая, как
+        загорается луна над крышами города.
+      </p>
+      <p class="reveal" data-reveal>
+        Сегодня LUNA — это небольшая команда обжарщиков, пекарей и поваров, которые каждый день
+        готовят кофе на собственной обжарке, пекут хлеб и десерты с нуля и собирают завтраки
+        из локальных продуктов. Мы верим, что уют начинается с деталей: света, тишины и
+        внимания к каждому гостю.
+      </p>
+
+      <div class="about-stats reveal" data-reveal>
+        <div class="stat">
+          <span class="stat-num">2018</span>
+          <span class="stat-label">Год основания</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Авторских напитков</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Собственная обжарка</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="section menu-section" id="menu">
+  <div class="container">
+    <p class="eyebrow reveal center" data-reveal>Меню</p>
+    <h2 class="section-title center reveal" data-reveal>Из чего мы готовим момент</h2>
+    <p class="section-lead center reveal" data-reveal>
+      Пять небольших разделов — от утреннего эспрессо до вечернего десерта.
+      Выберите категорию, чтобы посмотреть блюда.
+    </p>
+
+    <div class="menu-tabs reveal" data-reveal role="tablist" aria-label="Категории меню">
+      <button class="menu-tab is-active" data-category="coffee" role="tab" aria-selected="true">Coffee</button>
+      <button class="menu-tab" data-category="breakfast" role="tab" aria-selected="false">Breakfast</button>
+      <button class="menu-tab" data-category="main" role="tab" aria-selected="false">Main Dishes</button>
+      <button class="menu-tab" data-category="desserts" role="tab" aria-selected="false">Desserts</button>
+      <button class="menu-tab" data-category="drinks" role="tab" aria-selected="false">Drinks</button>
+    </div>
+
+    <div class="menu-panels reveal" data-reveal>
+
+      <ul class="menu-list is-active" data-panel="coffee" role="tabpanel">
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Espresso</h3><span class="dots"></span><span class="price">3.20 €</span></div>
+          <p>Насыщенный шот на собственной обжарке средней прожарки.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Flat White</h3><span class="dots"></span><span class="price">4.50 €</span></div>
+          <p>Двойной эспрессо и бархатное молоко в идеальной пропорции.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Latte LUNA</h3><span class="dots"></span><span class="price">4.80 €</span></div>
+          <p>Наш авторский рецепт с нотами карамели и мадагаскарской ванили.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Cappuccino</h3><span class="dots"></span><span class="price">4.30 €</span></div>
+          <p>Классика с плотной молочной пеной и какао-пудрой.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Pour Over</h3><span class="dots"></span><span class="price">5.50 €</span></div>
+          <p>Фильтр-кофе ручной заливки, зерно меняется каждый месяц.</p>
+        </li>
+      </ul>
+
+      <ul class="menu-list" data-panel="breakfast" role="tabpanel" hidden>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Авокадо-тост</h3><span class="dots"></span><span class="price">8.50 €</span></div>
+          <p>Цельнозерновой хлеб, авокадо, лимон, чили, яйцо пашот.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Гранола LUNA</h3><span class="dots"></span><span class="price">6.80 €</span></div>
+          <p>Домашняя гранола, йогурт, сезонные ягоды, мёд.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Круассан с ветчиной</h3><span class="dots"></span><span class="price">7.20 €</span></div>
+          <p>Слоёный круассан, ветчина, грюйер, дижонская горчица.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Панкейки</h3><span class="dots"></span><span class="price">7.90 €</span></div>
+          <p>Пышные панкейки, кленовый сироп, свежие ягоды, сливочное масло.</p>
+        </li>
+      </ul>
+
+      <ul class="menu-list" data-panel="main" role="tabpanel" hidden>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Ризотто с грибами</h3><span class="dots"></span><span class="price">13.50 €</span></div>
+          <p>Кремовый рис карнароли, лесные грибы, пармезан, трюфельное масло.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Паста с томленым томатом</h3><span class="dots"></span><span class="price">11.90 €</span></div>
+          <p>Домашняя паста, соус из томленых томатов, базилик, буррата.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Салат с лососем</h3><span class="dots"></span><span class="price">14.20 €</span></div>
+          <p>Слабосолёный лосось, микс салатов, авокадо, цитрусовая заправка.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Крем-суп дня</h3><span class="dots"></span><span class="price">6.50 €</span></div>
+          <p>Сезонный суп-пюре с гренками собственной выпечки.</p>
+        </li>
+      </ul>
+
+      <ul class="menu-list" data-panel="desserts" role="tabpanel" hidden>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Чизкейк Нью-Йорк</h3><span class="dots"></span><span class="price">5.90 €</span></div>
+          <p>Классический сливочный чизкейк на песочной основе.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Шоколадный фондан</h3><span class="dots"></span><span class="price">6.40 €</span></div>
+          <p>Тёплый шоколадный кекс с жидкой сердцевиной и ванильным мороженым.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Тарт с грушей</h3><span class="dots"></span><span class="price">5.60 €</span></div>
+          <p>Миндальный крем, карамелизированная груша, песочное тесто.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Панна-котта</h3><span class="dots"></span><span class="price">5.20 €</span></div>
+          <p>Нежная панна-котта с ягодным соусом.</p>
+        </li>
+      </ul>
+
+      <ul class="menu-list" data-panel="drinks" role="tabpanel" hidden>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Матча-латте</h3><span class="dots"></span><span class="price">5.20 €</span></div>
+          <p>Церемониальная матча, овсяное молоко, лёгкая сладость.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Домашний лимонад</h3><span class="dots"></span><span class="price">4.50 €</span></div>
+          <p>Цитрус, мята, тростниковый сахар, содовая.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Горячий шоколад</h3><span class="dots"></span><span class="price">4.90 €</span></div>
+          <p>Бельгийский шоколад 70%, взбитые сливки.</p>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-head"><h3>Чайная карта</h3><span class="dots"></span><span class="price">от 3.80 €</span></div>
+          <p>Листовой чай: улун, сенча, ромашка, каркаде.</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== POPULAR DISHES ===== -->
+<section class="section dishes" id="dishes">
+  <div class="container">
+    <p class="eyebrow reveal center" data-reveal>Популярное</p>
+    <h2 class="section-title center reveal" data-reveal>Любимые блюда гостей</h2>
+
+    <div class="dish-grid">
+
+      <article class="dish-card reveal" data-reveal>
+        <div class="dish-media">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Латте с рисунком в форме сердца">
+        </div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Latte LUNA</h3><span class="price">4.80 €</span></div>
+          <p>Карамель, ваниль Мадагаскара, бархатная пенка.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-reveal>
+        <div class="dish-media">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Тост с авокадо и яйцом пашот">
+        </div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Авокадо-тост</h3><span class="price">8.50 €</span></div>
+          <p>Цельнозерновой хлеб, чили, яйцо пашот, лимон.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-reveal>
+        <div class="dish-media">
+          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80" alt="Панкейки со свежими ягодами">
+        </div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Панкейки</h3><span class="price">7.90 €</span></div>
+          <p>Кленовый сироп, ягоды, сливочное масло.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-reveal>
+        <div class="dish-media">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" alt="Кусок чизкейка Нью-Йорк">
+        </div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Чизкейк Нью-Йорк</h3><span class="price">5.90 €</span></div>
+          <p>Сливочный, на песочной основе, без лишней сладости.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-reveal>
+        <div class="dish-media">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Ризотто с грибами и пармезаном">
+        </div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Ризотто с грибами</h3><span class="price">13.50 €</span></div>
+          <p>Рис карнароли, лесные грибы, трюфельное масло.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal" data-reveal>
+        <div class="dish-media">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Капучино с какао-пудрой">
+        </div>
+        <div class="dish-body">
+          <div class="dish-head"><h3>Cappuccino</h3><span class="price">4.30 €</span></div>
+          <p>Плотная молочная пена, какао-пудра.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <p class="eyebrow reveal center" data-reveal>Галерея</p>
+    <h2 class="section-title center reveal" data-reveal>Атмосфера LUNA</h2>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item span-2 reveal" data-reveal>
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80" alt="Зал кафе LUNA с деревянными столами">
+      </figure>
+      <figure class="gallery-item reveal" data-reveal>
+        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=800&q=80" alt="Свежеобжаренные кофейные зёрна">
+      </figure>
+      <figure class="gallery-item reveal" data-reveal>
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Свежая выпечка на прилавке">
+      </figure>
+      <figure class="gallery-item reveal" data-reveal>
+        <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=800&q=80" alt="Бариста наливает кофе в чашку">
+      </figure>
+      <figure class="gallery-item span-2 reveal" data-reveal>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Барная стойка кафе LUNA">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <p class="eyebrow reveal center" data-reveal>Отзывы</p>
+    <h2 class="section-title center reveal" data-reveal>Что говорят гости</h2>
+
+    <div class="review-grid">
+      <article class="review-card reveal" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p>«Лучший флэт уайт в городе. Атмосфера настолько спокойная, что не хочется уходить.»</p>
+        <div class="review-author">— Анна К.</div>
+      </article>
+
+      <article class="review-card reveal" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p>«Пришли на завтрак и остались на три часа. Панкейки — отдельная песня.»</p>
+        <div class="review-author">— Дмитрий С.</div>
+      </article>
+
+      <article class="review-card reveal" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p>«Очень внимательный персонал и красивая подача каждого блюда. Возвращаемся сюда снова и снова.»</p>
+        <div class="review-author">— Мария Л.</div>
+      </article>
+
+      <article class="review-card reveal" data-reveal>
+        <div class="stars">★★★★☆</div>
+        <p>«Идеальное место для встреч — тихо, светло и вкусно. Обязательно попробуйте ризотто.»</p>
+        <div class="review-author">— Игорь П.</div>
+      </article>
+
+      <article class="review-card reveal" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p>«Кофе на собственной обжарке чувствуется сразу. Один из немногих кафе, куда хочется приходить каждый день.»</p>
+        <div class="review-author">— Елена В.</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKING ===== -->
+<section class="section booking" id="booking">
+  <div class="container booking-grid">
+    <div class="booking-copy">
+      <p class="eyebrow reveal" data-reveal>Бронирование</p>
+      <h2 class="section-title reveal" data-reveal>Оставим для вас лучший столик</h2>
+      <p class="reveal" data-reveal>
+        Заполните форму, и мы свяжемся с вами для подтверждения брони.
+        Для групп от 8 человек, пожалуйста, звоните нам напрямую.
+      </p>
+      <ul class="booking-notes reveal" data-reveal>
+        <li>Бронь удерживается 15 минут после указанного времени</li>
+        <li>Отмена — не позднее чем за 2 часа</li>
+        <li>Столики у окна бронируются быстрее всего</li>
+      </ul>
+    </div>
+
+    <div class="booking-form-wrap reveal" data-reveal>
+      <form id="bookingForm" class="booking-form" novalidate>
+        <div class="form-row">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+
+        <div class="form-row form-row-split">
+          <div>
+            <label for="date">Дата</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div>
+            <label for="time">Время</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="guests">Количество гостей</label>
+          <select id="guests" name="guests" required>
+            <option value="" disabled selected>Выберите количество</option>
+            <option>1 гость</option>
+            <option>2 гостя</option>
+            <option>3 гостя</option>
+            <option>4 гостя</option>
+            <option>5 гостей</option>
+            <option>6 гостей</option>
+            <option>7 гостей</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="contact">Телефон или e-mail</label>
+          <input type="text" id="contact" name="contact" placeholder="+373 00 000 000" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Забронировать столик</button>
+      </form>
+
+      <div class="booking-success" id="bookingSuccess" hidden>
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 13.5C18.6 15.8 16 17.4 13 17.4C8.3 17.4 4.5 13.6 4.5 8.9C4.5 6 6 3.4 8.3 2C4.2 3 1 6.7 1 11.2C1 16.6 5.4 21 10.8 21C15.2 21 18.9 18.1 20 13.5Z" fill="currentColor"/>
+        </svg>
+        <h3>Столик забронирован</h3>
+        <p id="bookingSuccessText">Спасибо! Мы ждём вас в LUNA Café.</p>
+        <button type="button" class="btn btn-outline" id="bookingAgainBtn">Забронировать ещё раз</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal" data-reveal>
+      <p class="eyebrow">Контакты</p>
+      <h2 class="section-title">Заглядывайте в гости</h2>
+
+      <div class="contact-item">
+        <span class="contact-label">Адрес</span>
+        <a href="https://www.google.com/maps/search/?api=1&query=str.+Alexandru+cel+Bun+12%2C+Chi%C8%99in%C4%83u" target="_blank" rel="noopener">ул. Александру чел Бун, 12, Кишинёв</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Телефон</span>
+        <a href="tel:+37360000000">+373 60 000 000</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Instagram</span>
+        <a href="https://instagram.com/luna.cafe" target="_blank" rel="noopener">@luna.cafe</a>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-label">Часы работы</span>
+        <div class="hours">
+          <div><span>Пн — Пт</span><span>08:00 – 22:00</span></div>
+          <div><span>Сб — Вс</span><span>09:00 – 23:00</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-map reveal" data-reveal>
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=80" alt="LUNA Café снаружи">
+      <a class="map-pin" href="https://www.google.com/maps/search/?api=1&query=str.+Alexandru+cel+Bun+12%2C+Chi%C8%99in%C4%83u" target="_blank" rel="noopener" aria-label="Открыть карту">
+        <span></span>
+        Открыть на карте
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#home" class="brand footer-brand">
+      <svg class="brand-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M20 13.5C18.6 15.8 16 17.4 13 17.4C8.3 17.4 4.5 13.6 4.5 8.9C4.5 6 6 3.4 8.3 2C4.2 3 1 6.7 1 11.2C1 16.6 5.4 21 10.8 21C15.2 21 18.9 18.1 20 13.5Z" fill="currentColor"/>
+      </svg>
+      <span>LUNA <em>Café</em></span>
+    </a>
+
+    <nav class="footer-nav">
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#booking">Бронирование</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <p class="footer-copy">© <span id="year"></span> LUNA Café. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
